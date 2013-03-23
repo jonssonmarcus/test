@@ -47,10 +47,26 @@ public static void main(String args[]) {
 	Hello2 h2 = new Hello2();
 	h2.a(h2);
 	System.out.println(h2.max);
+	Hello h1 = new Hello();
+	Inner i1 = h1.new Inner();
+	i1.innerWrite();
+	System.out.println(innerValue);
+	
 	
 
 h2.skriv();
 	}
+
+class Inner{
+	
+	int innerValue = 99;
+	
+	public void innerWrite() {
+		System.out.println("inner " + max);
+	}
+	
+}
+
 }
 
 
